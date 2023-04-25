@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2? family=Merienda&display=swap">
+</head>
+
+<body>
+
+	<div class="contenedorPadre">
+		<header>
+			<h1><b>BIENVENIDOS AL JUEGO PIEDRA, PAPEL O TIJERAS</b></h1>
+		</header>
+		<div class="contenedorInstruccion">
+			<div>
+				<p>ELIGE TU ARMA</p>
+				<p>El que llegue a 5 puntos primero es el <b>GANADOR</b></p>
+			</div>
+		</div>
+		<div class="contenedorJuego">
+			<div class="contenedorHumano">
+				<div class="turno">
+					<p>HUMANO</p>
+				</div>
+				<div class="seleccionarHumano">
+					<div id="piedra">
+						<input type="image"
+							src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_960_720.png"
+							height="130" width="130" />
+					</div>
+					<div id="papel">
+						<input type="image"
+							src="https://w7.pngwing.com/pngs/50/790/png-transparent-drawing-praying-hands-others-miscellaneous-white-face.png"
+							height="130" width="130" />
+					</div>
+					<div id="tijeras">
+						<input type="image"
+							src="https://img2.freepng.es/20180411/uue/kisspng-scissors-drawing-clip-art-scissor-5aced9aa283129.9030199915235055781646.jpg"
+							height="130" width="130" />
+					</div>
+				</div>
+			</div>
+			<div class="contenedorPuntaje">
+				<div class="puntaje">
+					<p>PUNTAJES</p>
+				</div>
+				<div class="marcador">
+					<div class="puntajeHumano" style="font-size: 100px">
+						0
+					</div>
+					<div class="puntajeComputadora" style="font-size: 100px">
+						0
+					</div>
+				</div>
+			</div>
+			<div class="contenedorComputadora">
+				<div class="turno">
+					<p>COMPUTADORA</p>
+				</div>
+				<div class="seleccionarComputadora">
+					<div id="piedraC">
+						<img type="image"
+							src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_960_720.png"
+							height="130" width="130" />
+					</div>
+					<div id="papelC">
+						<img type="image"
+							src="https://w7.pngwing.com/pngs/50/790/png-transparent-drawing-praying-hands-others-miscellaneous-white-face.png"
+							height="130" width="130" />
+					</div>
+					<div id="tijerasC">
+						<img type="image"
+							src="https://img2.freepng.es/20180411/uue/kisspng-scissors-drawing-clip-art-scissor-5aced9aa283129.9030199915235055781646.jpg"
+							height="130" width="130" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contenedorResultado">
+
+		</div>
+
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+				<h3>GAME OVER</h3>
+				<h4>HAS GANADO LA PARTIDA</h4>
+
+				<input type="submit" class="btn-submit" id="btn-submit" value="Jugar de nuevo">
+
+			</div>
+		</div>
+	</div>
+
+	<script src="./scripts.js"></script>
+
+</body>
+
+</html>
